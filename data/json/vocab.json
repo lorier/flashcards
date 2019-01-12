@@ -1,0 +1,20 @@
+[
+ {
+  "word_type": "noun",
+  "spanish_singular": "el amor",
+  "spanish_plural": "los amores",
+  "english": "love\r"
+ },
+ {
+  "word_type": "noun",
+  "spanish_singular": "la casa",
+  "spanish_plural": "las casas",
+  "english": "the house\r"
+ },
+ {
+  "word_type": "noun",
+  "spanish_singular": "en casa",
+  "spanish_plural": "",
+  "english": "at home"
+ }
+]
