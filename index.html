@@ -3,10 +3,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Nunito:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Flash Cards</title>
 </head>
 <body>
+    <div id="card-container" class="panel panel-success">
+        <div class="panel-heading">
+            <h2>Spanish-to-English Flash Cards</h2>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class=" col-sm-6">
+                    <p>Spanish</p>
+                    <div class="card">
+                        <h2 id="phrase"></h2>
+                        <p id="wordtype"></p>
+                    </div>
+                </div>
+                <div class=" col-sm-6">
+                    <p>English</p>
+                    <div class="card">
+                        <h2 id="answer"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row buttons">
+                <div class="col-sm-12">
+                    <button id="revealplural" class="btn btn-lg btn-primary">Toggle Plural</button>
+                    <button id="reveal" class="btn btn-lg btn-success">Reveal English</button>
+                    <button id="newcard" class="btn btn-lg btn-default">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>

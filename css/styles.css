@@ -1,2 +1,48 @@
 body {
-  border: 2px solid red; }
+  font-family: 'Nunito', sans-serif;
+  padding: 5px; }
+
+.panel-body h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  text-align: center; }
+
+.panel-body p {
+  font-size: 20px;
+  color: #555; }
+
+.panel {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px; }
+
+.buttons > div {
+  text-align: center; }
+
+.next {
+  text-align: center; }
+
+.col-sm-6 {
+  padding: 30px; }
+
+button {
+  margin: 5px; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  position: relative; }
+
+#wordtype {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .05em; }
