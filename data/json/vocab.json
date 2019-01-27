@@ -163,7 +163,7 @@
  },
  {
   "word_type": "noun",
-  "spanish_singular": "la televisón",
+  "spanish_singular": "la televisión",
   "spanish_plural": "(?)",
   "english": "the television\r"
  },
@@ -234,73 +234,73 @@
   "english": "(she) copies\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "entra",
   "spanish_plural": "--",
   "english": "(he) enters\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "es",
   "spanish_plural": "--",
   "english": "(it) is; (she) is\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "no es",
   "spanish_plural": "-- ",
   "english": "(it) is not\r"
  },
  {
-  "word_type": "verbs",
-  "spanish_singular": "esucha",
+  "word_type": "verb",
+  "spanish_singular": "escucha",
   "spanish_plural": "-- ",
   "english": "(she) listens to; is\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "estudia",
   "spanish_plural": "--",
   "english": "(she) studies; is studying\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "estudiar",
   "spanish_plural": "--",
   "english": "to study\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "habla",
   "spanish_plural": "--",
   "english": "speaks\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "hay",
   "spanish_plural": "--",
   "english": "there are; there is\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "lee",
   "spanish_plural": "--",
   "english": "(he) reads; is reading\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "mirar",
   "spanish_plural": "--",
   "english": "to look at; to watch\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "necesito",
   "spanish_plural": "--",
   "english": "I need\r"
  },
  {
-  "word_type": "verbs",
+  "word_type": "verb",
   "spanish_singular": "quiero",
   "spanish_plural": "--",
   "english": "I want\r"
@@ -308,73 +308,133 @@
  {
   "word_type": "other words",
   "spanish_singular": "con",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "with\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "de ",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "of; in; from\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "ella",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "she\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "en",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "in; into\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "mañana",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "tomorrow\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "muy",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "very\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "no",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "no; not\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "por favor",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "please\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "sí",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "yes; yes; indeed!\r"
  },
  {
   "word_type": "other words",
-  "spanish_singular": "tamién",
-  "spanish_plural": "",
+  "spanish_singular": "también",
+  "spanish_plural": "--",
   "english": "also; too\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "y",
-  "spanish_plural": "",
+  "spanish_plural": "--",
   "english": "and\r"
  },
  {
   "word_type": "other words",
   "spanish_singular": "yo",
-  "spanish_plural": "",
-  "english": "I"
+  "spanish_plural": "--",
+  "english": "I\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "que",
+  "spanish_plural": "--",
+  "english": "what\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "quien",
+  "spanish_plural": "--",
+  "english": "who\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "quienes",
+  "spanish_plural": "--",
+  "english": "who all\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "cuál/cuáles",
+  "spanish_plural": "--",
+  "english": "which\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "cuando",
+  "spanish_plural": "--",
+  "english": "when\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "dónde",
+  "spanish_plural": "--",
+  "english": "where\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "por qué",
+  "spanish_plural": "--",
+  "english": "why\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "como",
+  "spanish_plural": "--",
+  "english": "how\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "cuanto/cuanta",
+  "spanish_plural": "--",
+  "english": "how much\r"
+ },
+ {
+  "word_type": "other words",
+  "spanish_singular": "cuantos/cuantas",
+  "spanish_plural": "--",
+  "english": "how many"
  }
 ]

@@ -26,7 +26,7 @@ noun,el programa,los programas ,the program
 noun,mi programa favorito,--,my favorite program
 noun,la radio,las radios,the radio
 noun,la sala,las salas,the living room
-noun,la televisón,(?),the television
+noun,la televisión,(?),the television
 noun,la voz,las voces,the voice
 adjective,estudioso;a,--,studious
 adjective,fácil,--,easy
@@ -38,27 +38,37 @@ adjective,necessario; a,--,necessary
 adjective,posible,--,possible
 adjective,su,--,her
 verb,copia,--,(she) copies
-verbs,entra,--,(he) enters
-verbs,es,--,(it) is; (she) is
-verbs,no es,-- ,(it) is not
-verbs,esucha,-- ,(she) listens to; is
-verbs,estudia,--,(she) studies; is studying
-verbs,estudiar,--,to study
-verbs,habla,--,speaks
-verbs,hay,--,there are; there is
-verbs,lee,--,(he) reads; is reading
-verbs,mirar,--,to look at; to watch
-verbs,necesito,--,I need
-verbs,quiero,--,I want
-other words,con,,with
-other words,de ,,of; in; from
-other words,ella,,she
-other words,en,,in; into
-other words,mañana,,tomorrow
-other words,muy,,very
-other words,no,,no; not
-other words,por favor,,please
-other words,sí,,yes; yes; indeed!
-other words,tamién,,also; too
-other words,y,,and
-other words,yo,,I
+verb,entra,--,(he) enters
+verb,es,--,(it) is; (she) is
+verb,no es,-- ,(it) is not
+verb,escucha,-- ,(she) listens to; is
+verb,estudia,--,(she) studies; is studying
+verb,estudiar,--,to study
+verb,habla,--,speaks
+verb,hay,--,there are; there is
+verb,lee,--,(he) reads; is reading
+verb,mirar,--,to look at; to watch
+verb,necesito,--,I need
+verb,quiero,--,I want
+other words,con,--,with
+other words,de ,--,of; in; from
+other words,ella,--,she
+other words,en,--,in; into
+other words,mañana,--,tomorrow
+other words,muy,--,very
+other words,no,--,no; not
+other words,por favor,--,please
+other words,sí,--,yes; yes; indeed!
+other words,también,--,also; too
+other words,y,--,and
+other words,yo,--,I
+other words,que,--,what
+other words,quien,--,who
+other words,quienes,--,who all
+other words,cuál/cuáles,--,which
+other words,cuando,--,when
+other words,dónde,--,where
+other words,por qué,--,why
+other words,como,--,how
+other words,cuanto/cuanta,--,how much
+other words,cuantos/cuantas,--,how many
