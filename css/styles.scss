@@ -8,6 +8,16 @@ body{
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
+.panel-heading {
+    .lesson-selector {
+        display: flex;
+        flex-direction: column;
+        min-height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 label {
     margin-right: 15px;
     display: inline-block;
@@ -27,7 +37,7 @@ label {
 .next{
     text-align: center;
 }
-.col-sm-6 {
+.panel-body .col-sm-6 {
     padding: 30px;
 }
 button {

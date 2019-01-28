@@ -1,6 +1,10 @@
 let csvToJson = require('convert-csv-to-json');
  
-let fileInputName = 'data/Vocabulary - Sheet1.csv'; 
-let fileOutputName = 'data/json/vocab.json';
+let fileOneInputName = 'data/Vocabulary - UnitOne.csv'; 
+let fileOneOutputName = 'data/json/unitone.json';
+
+let fileTwoInputName = 'data/Vocabulary - UnitTwo.csv'; 
+let fileTwoOutputName = 'data/json/unittwo.json';
  
-csvToJson.fieldDelimiter(',').generateJsonFileFromCsv(fileInputName,fileOutputName);
+csvToJson.fieldDelimiter(',').generateJsonFileFromCsv(fileOneInputName,fileOneOutputName);
+csvToJson.fieldDelimiter(',').generateJsonFileFromCsv(fileTwoInputName, fileTwoOutputName);

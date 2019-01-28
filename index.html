@@ -11,12 +11,20 @@
 <body>
     <div id="card-container" class="panel panel-success">
         <div class="panel-heading">
-            <h2>Spanish-to-English Flash Cards</h2>
-            <div>
-                <input type="radio" name="langopt" id="option1" value="sp" autocomplete="off" checked>
-                <label class="active">Spanish Clues</label>
-                <input type="radio" name="langopt" id="option2" value="en" autocomplete="off">
-                <label class="">English Clues</label>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Spanish-to-English Flash Cards</h2>
+                    <div>
+                        <input type="radio" name="langopt" id="option1" value="Spanish" autocomplete="off" checked>
+                        <label class="active">Spanish Clues</label>
+                        <input type="radio" name="langopt" id="option2" value="English" autocomplete="off">
+                        <label class="">English Clues</label>
+                    </div>
+                </div>
+                <div class="col-sm-4 lesson-selector">
+                    <label for="lessons">Choose a Unit:</label>
+                    <select id="lessons"></select>
+                </div>
             </div>
         </div>
         <div class="panel-body">
@@ -37,12 +45,12 @@
             </div>
             <div class="row buttons">
                 <div class="col-sm-12">
-                    <button id="revealplural" class="btn btn-lg btn-primary">Toggle Plural</button>
+                    <button id="back" class="btn btn-lg btn-default">Back</button>
                     <button id="next" class="btn btn-lg btn-success"></button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <script type="module" src="js/dest/app.js"></script>
 </body>
 </html>

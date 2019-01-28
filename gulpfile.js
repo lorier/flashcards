@@ -3,6 +3,8 @@ const gulp = require('gulp'),
   livereload = require('gulp-livereload'),
   babel = require('gulp-babel');
 
+// TODOfix the babel 'require' output possibly with this gist:
+// https://gist.github.com/danharper/3ca2273125f500429945
 
   gulp.task('html', function() {
     return gulp.src('*.html')
@@ -17,11 +19,11 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function() {
-  return gulp.src('js/src/scripts.js')
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
-    .pipe( gulp.dest('js') )
+  return gulp.src('js/src/*.js')
+    // .pipe(babel({
+    //   presets: ['@babel/preset-env']
+    // }))
+    .pipe( gulp.dest('js/dest') )
     .pipe(livereload())
 });
 
