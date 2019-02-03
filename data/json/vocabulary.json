@@ -1,0 +1,1635 @@
+{
+  "Unit One": [
+    {
+      "id": 1,
+      "word_type": "noun",
+      "spanish": "el amor",
+      "english": "love",
+      "is_cognate": false
+    },
+    {
+      "id": 2,
+      "word_type": "noun",
+      "spanish": "la casa",
+      "english": "the house",
+      "is_cognate": true
+    },
+    {
+      "id": 3,
+      "word_type": "noun",
+      "spanish": "en casa",
+      "english": "at home",
+      "is_cognate": false
+    },
+    {
+      "id": 4,
+      "word_type": "noun",
+      "spanish": "la cocina",
+      "english": "the kitchen; the cooking",
+      "is_cognate": false
+    },
+    {
+      "id": 5,
+      "word_type": "noun",
+      "spanish": "el cuaderno",
+      "english": "the notebook",
+      "is_cognate": false
+    },
+    {
+      "id": 6,
+      "word_type": "noun",
+      "spanish": "el diccionario",
+      "english": "the dictionary",
+      "is_cognate": true
+    },
+    {
+      "id": 7,
+      "word_type": "noun",
+      "spanish": "la escuela",
+      "english": "the school",
+      "is_cognate": false
+    },
+    {
+      "id": 8,
+      "word_type": "noun",
+      "spanish": "el español",
+      "english": "The Spanish languge; Spanish",
+      "is_cognate": false
+    },
+    {
+      "id": 9,
+      "word_type": "noun",
+      "spanish": "el examen",
+      "english": "the test",
+      "is_cognate": true
+    },
+    {
+      "id": 10,
+      "word_type": "noun",
+      "spanish": "mi examen de español",
+      "english": "my Spanish test",
+      "is_cognate": false
+    },
+    {
+      "id": 11,
+      "word_type": "noun",
+      "spanish": "la frase",
+      "english": "the sentence",
+      "is_cognate": false
+    },
+    {
+      "id": 12,
+      "word_type": "noun",
+      "spanish": "la gramática",
+      "english": "the grammar",
+      "is_cognate": true
+    },
+    {
+      "id": 13,
+      "word_type": "noun",
+      "spanish": "el hermano",
+      "english": "the brother",
+      "is_cognate": false
+    },
+    {
+      "id": 14,
+      "word_type": "noun",
+      "spanish": "el lápiz",
+      "english": "the pencil",
+      "is_cognate": false
+    },
+    {
+      "id": 15,
+      "word_type": "noun",
+      "spanish": "la lección",
+      "english": "the lesson",
+      "is_cognate": true
+    },
+    {
+      "id": 16,
+      "word_type": "noun",
+      "spanish": "el libro",
+      "english": "the book",
+      "is_cognate": false
+    },
+    {
+      "id": 17,
+      "word_type": "noun",
+      "spanish": "la madre",
+      "english": "the mother",
+      "is_cognate": false
+    },
+    {
+      "id": 18,
+      "word_type": "noun",
+      "spanish": "la muchacha",
+      "english": "the girl",
+      "is_cognate": false
+    },
+    {
+      "id": 19,
+      "word_type": "noun",
+      "spanish": "la noche",
+      "english": "the night; evening",
+      "is_cognate": false
+    },
+    {
+      "id": 20,
+      "word_type": "noun",
+      "spanish": "el padre",
+      "english": "the father",
+      "is_cognate": false
+    },
+    {
+      "id": 21,
+      "word_type": "noun",
+      "spanish": "el papel",
+      "english": "the paper",
+      "is_cognate": false
+    },
+    {
+      "id": 22,
+      "word_type": "noun",
+      "spanish": "la pasión",
+      "english": "the passion",
+      "is_cognate": false
+    },
+    {
+      "id": 23,
+      "word_type": "noun",
+      "spanish": "el periódico",
+      "english": "the newspaper",
+      "is_cognate": false
+    },
+    {
+      "id": 24,
+      "word_type": "noun",
+      "spanish": "el programa",
+      "english": "the program",
+      "is_cognate": true
+    },
+    {
+      "id": 25,
+      "word_type": "noun",
+      "spanish": "mi programa favorito",
+      "english": "my favorite program",
+      "is_cognate": false
+    },
+    {
+      "id": 26,
+      "word_type": "noun",
+      "spanish": "la radio",
+      "english": "the radio",
+      "is_cognate": true
+    },
+    {
+      "id": 27,
+      "word_type": "noun",
+      "spanish": "la sala",
+      "english": "the living room",
+      "is_cognate": false
+    },
+    {
+      "id": 28,
+      "word_type": "noun",
+      "spanish": "la televisión",
+      "english": "the television",
+      "is_cognate": true
+    },
+    {
+      "id": 29,
+      "word_type": "noun",
+      "spanish": "la voz",
+      "english": "the voice",
+      "is_cognate": false
+    },
+    {
+      "id": 30,
+      "word_type": "adjective",
+      "spanish": "estudioso;a",
+      "english": "studious",
+      "is_cognate": false
+    },
+    {
+      "id": 31,
+      "word_type": "adjective",
+      "spanish": "fácil",
+      "english": "easy",
+      "is_cognate": false
+    },
+    {
+      "id": 32,
+      "word_type": "adjective",
+      "spanish": "favorito; a",
+      "english": "favorite",
+      "is_cognate": true
+    },
+    {
+      "id": 33,
+      "word_type": "adjective",
+      "spanish": "importante",
+      "english": "important",
+      "is_cognate": true
+    },
+    {
+      "id": 34,
+      "word_type": "adjective",
+      "spanish": "interesante",
+      "english": "interesting",
+      "is_cognate": true
+    },
+    {
+      "id": 35,
+      "word_type": "adjective",
+      "spanish": "mi",
+      "english": "my",
+      "is_cognate": true
+    },
+    {
+      "id": 36,
+      "word_type": "adjective",
+      "spanish": "necessario; a",
+      "english": "necessary",
+      "is_cognate": true
+    },
+    {
+      "id": 37,
+      "word_type": "adjective",
+      "spanish": "posible",
+      "english": "possible",
+      "is_cognate": true
+    },
+    {
+      "id": 38,
+      "word_type": "adjective",
+      "spanish": "su",
+      "english": "her",
+      "is_cognate": false
+    },
+    {
+      "id": 39,
+      "word_type": "verb",
+      "spanish": "copia",
+      "english": "(she) copies",
+      "is_cognate": true
+    },
+    {
+      "id": 40,
+      "word_type": "verb",
+      "spanish": "entra",
+      "english": "(he) enters",
+      "is_cognate": true
+    },
+    {
+      "id": 41,
+      "word_type": "verb",
+      "spanish": "es",
+      "english": "(it) is; (she) is",
+      "is_cognate": false
+    },
+    {
+      "id": 42,
+      "word_type": "verb",
+      "spanish": "no es",
+      "english": "(it) is not",
+      "is_cognate": false
+    },
+    {
+      "id": 43,
+      "word_type": "verb",
+      "spanish": "escucha",
+      "english": "(she) listens to; is",
+      "is_cognate": false
+    },
+    {
+      "id": 44,
+      "word_type": "verb",
+      "spanish": "estudia",
+      "english": "(she) studies; is studying",
+      "is_cognate": true
+    },
+    {
+      "id": 45,
+      "word_type": "verb",
+      "spanish": "estudiar",
+      "english": "to study",
+      "is_cognate": true
+    },
+    {
+      "id": 46,
+      "word_type": "verb",
+      "spanish": "habla",
+      "english": "speaks",
+      "is_cognate": false
+    },
+    {
+      "id": 47,
+      "word_type": "verb",
+      "spanish": "hay",
+      "english": "there are; there is",
+      "is_cognate": false
+    },
+    {
+      "id": 48,
+      "word_type": "verb",
+      "spanish": "lee",
+      "english": "(he) reads; is reading",
+      "is_cognate": false
+    },
+    {
+      "id": 49,
+      "word_type": "verb",
+      "spanish": "mirar",
+      "english": "to look at; to watch",
+      "is_cognate": false
+    },
+    {
+      "id": 50,
+      "word_type": "verb",
+      "spanish": "necesito",
+      "english": "I need",
+      "is_cognate": true
+    },
+    {
+      "id": 51,
+      "word_type": "verb",
+      "spanish": "quiero",
+      "english": "I want",
+      "is_cognate": false
+    },
+    {
+      "id": 52,
+      "word_type": "other words",
+      "spanish": "con",
+      "english": "with",
+      "is_cognate": false
+    },
+    {
+      "id": 53,
+      "word_type": "other words",
+      "spanish": "de ",
+      "english": "of; in; from",
+      "is_cognate": false
+    },
+    {
+      "id": 54,
+      "word_type": "other words",
+      "spanish": "ella",
+      "english": "she",
+      "is_cognate": false
+    },
+    {
+      "id": 55,
+      "word_type": "other words",
+      "spanish": "en",
+      "english": "in; into",
+      "is_cognate": false
+    },
+    {
+      "id": 56,
+      "word_type": "other words",
+      "spanish": "mañana",
+      "english": "tomorrow",
+      "is_cognate": false
+    },
+    {
+      "id": 57,
+      "word_type": "other words",
+      "spanish": "muy",
+      "english": "very",
+      "is_cognate": false
+    },
+    {
+      "id": 58,
+      "word_type": "other words",
+      "spanish": "no",
+      "english": "no; not",
+      "is_cognate": true
+    },
+    {
+      "id": 59,
+      "word_type": "other words",
+      "spanish": "por favor",
+      "english": "please",
+      "is_cognate": false
+    },
+    {
+      "id": 60,
+      "word_type": "other words",
+      "spanish": "sí",
+      "english": "yes; yes; indeed!",
+      "is_cognate": false
+    },
+    {
+      "id": 61,
+      "word_type": "other words",
+      "spanish": "también",
+      "english": "also; too",
+      "is_cognate": false
+    },
+    {
+      "id": 62,
+      "word_type": "other words",
+      "spanish": "y",
+      "english": "and",
+      "is_cognate": false
+    },
+    {
+      "id": 63,
+      "word_type": "other words",
+      "spanish": "yo",
+      "english": "I",
+      "is_cognate": false
+    },
+    {
+      "id": 64,
+      "word_type": "other words",
+      "spanish": "que",
+      "english": "what",
+      "is_cognate": false
+    },
+    {
+      "id": 65,
+      "word_type": "other words",
+      "spanish": "quien",
+      "english": "who",
+      "is_cognate": false
+    },
+    {
+      "id": 66,
+      "word_type": "other words",
+      "spanish": "quienes",
+      "english": "who all",
+      "is_cognate": false
+    },
+    {
+      "id": 67,
+      "word_type": "other words",
+      "spanish": "cuál/cuáles",
+      "english": "which",
+      "is_cognate": false
+    },
+    {
+      "id": 68,
+      "word_type": "other words",
+      "spanish": "cuando",
+      "english": "when",
+      "is_cognate": false
+    },
+    {
+      "id": 69,
+      "word_type": "other words",
+      "spanish": "dónde",
+      "english": "where",
+      "is_cognate": false
+    },
+    {
+      "id": 70,
+      "word_type": "other words",
+      "spanish": "por qué",
+      "english": "why",
+      "is_cognate": false
+    },
+    {
+      "id": 71,
+      "word_type": "other words",
+      "spanish": "como",
+      "english": "how",
+      "is_cognate": false
+    },
+    {
+      "id": 72,
+      "word_type": "other words",
+      "spanish": "cuanto/cuanta",
+      "english": "how much",
+      "is_cognate": false
+    },
+    {
+      "id": 73,
+      "word_type": "other words",
+      "spanish": "cuantos/cuantas",
+      "english": "how many",
+      "is_cognate": false
+    }
+  ],
+  "Unit Two": [
+    {
+      "id": 1,
+      "word_type": "noun",
+      "spanish": "el aire",
+      "english": "the air",
+      "is_cognate": true
+    },
+    {
+      "id": 2,
+      "word_type": "noun",
+      "spanish": "el año",
+      "english": "the year",
+      "is_cognate": false
+    },
+    {
+      "id": 3,
+      "word_type": "noun",
+      "spanish": "la aldea",
+      "english": "the town",
+      "is_cognate": false
+    },
+    {
+      "id": 4,
+      "word_type": "noun",
+      "spanish": "la avenida",
+      "english": "the avenue",
+      "is_cognate": true
+    },
+    {
+      "id": 5,
+      "word_type": "noun",
+      "spanish": "la calle",
+      "english": "the street",
+      "is_cognate": false
+    },
+    {
+      "id": 6,
+      "word_type": "noun",
+      "spanish": "el cine",
+      "english": "the movie theater",
+      "is_cognate": true
+    },
+    {
+      "id": 7,
+      "word_type": "noun",
+      "spanish": "la cuidad",
+      "english": "the city",
+      "is_cognate": false
+    },
+    {
+      "id": 8,
+      "word_type": "noun",
+      "spanish": "la cosa",
+      "english": "the thing",
+      "is_cognate": false
+    },
+    {
+      "id": 9,
+      "word_type": "noun",
+      "spanish": "el dinero",
+      "english": "the money",
+      "is_cognate": false
+    },
+    {
+      "id": 10,
+      "word_type": "noun",
+      "spanish": "el edificio",
+      "english": "the building",
+      "is_cognate": false
+    },
+    {
+      "id": 11,
+      "word_type": "noun",
+      "spanish": "la experiencia",
+      "english": "the experience",
+      "is_cognate": true
+    },
+    {
+      "id": 12,
+      "word_type": "noun",
+      "spanish": "la flor",
+      "english": "the flower",
+      "is_cognate": true
+    },
+    {
+      "id": 13,
+      "word_type": "noun",
+      "spanish": "el hombre",
+      "english": "the man",
+      "is_cognate": false
+    },
+    {
+      "id": 14,
+      "word_type": "noun",
+      "spanish": "la mujer",
+      "english": "the woman",
+      "is_cognate": false
+    },
+    {
+      "id": 15,
+      "word_type": "noun",
+      "spanish": "el museo",
+      "english": "the museum",
+      "is_cognate": true
+    },
+    {
+      "id": 16,
+      "word_type": "noun",
+      "spanish": "la oficina",
+      "english": "the office",
+      "is_cognate": true
+    },
+    {
+      "id": 17,
+      "word_type": "noun",
+      "spanish": "el parque",
+      "english": "the park",
+      "is_cognate": true
+    },
+    {
+      "id": 18,
+      "word_type": "noun",
+      "spanish": "el primo",
+      "english": "the cousin",
+      "is_cognate": false
+    },
+    {
+      "id": 19,
+      "word_type": "noun",
+      "spanish": "la prisa",
+      "english": "the hurry",
+      "is_cognate": false
+    },
+    {
+      "id": 20,
+      "word_type": "noun",
+      "spanish": "de prisa",
+      "english": "in a hurry; in a rush",
+      "is_cognate": false
+    },
+    {
+      "id": 21,
+      "word_type": "noun",
+      "spanish": "el restaurante",
+      "english": "the restaurant",
+      "is_cognate": false
+    },
+    {
+      "id": 22,
+      "word_type": "noun",
+      "spanish": "el teatro",
+      "english": "the theater",
+      "is_cognate": true
+    },
+    {
+      "id": 23,
+      "word_type": "noun",
+      "spanish": "la tienda",
+      "english": "the store",
+      "is_cognate": false
+    },
+    {
+      "id": 24,
+      "word_type": "adjective",
+      "spanish": "altos; a",
+      "english": "tall; high",
+      "is_cognate": false
+    },
+    {
+      "id": 25,
+      "word_type": "adjective",
+      "spanish": "estos; as",
+      "english": "these",
+      "is_cognate": false
+    },
+    {
+      "id": 26,
+      "word_type": "adjective",
+      "spanish": "extraño; a",
+      "english": "strange",
+      "is_cognate": false
+    },
+    {
+      "id": 27,
+      "word_type": "adjective",
+      "spanish": "fresco; a",
+      "english": "fresh",
+      "is_cognate": true
+    },
+    {
+      "id": 28,
+      "word_type": "adjective",
+      "spanish": "grande",
+      "english": "big; large",
+      "is_cognate": true
+    },
+    {
+      "id": 29,
+      "word_type": "adjective",
+      "spanish": "mucho; a",
+      "english": "a great deal of",
+      "is_cognate": true
+    },
+    {
+      "id": 30,
+      "word_type": "adjective",
+      "spanish": "muchos; as",
+      "english": "many; a great many",
+      "is_cognate": true
+    },
+    {
+      "id": 31,
+      "word_type": "adjective",
+      "spanish": "nuevo; a",
+      "english": "new",
+      "is_cognate": true
+    },
+    {
+      "id": 32,
+      "word_type": "adjective",
+      "spanish": [
+        "pequeño",
+        "a"
+      ],
+      "english": "small; little",
+      "is_cognate": false
+    },
+    {
+      "id": 33,
+      "word_type": "adjective",
+      "spanish": "rápido; a",
+      "english": "fast; rapid",
+      "is_cognate": true
+    },
+    {
+      "id": 34,
+      "word_type": "adjective",
+      "spanish": "sus",
+      "english": "their",
+      "is_cognate": false
+    },
+    {
+      "id": 35,
+      "word_type": "adjective",
+      "spanish": "tanto; a",
+      "english": "so much",
+      "is_cognate": false
+    },
+    {
+      "id": 36,
+      "word_type": "adjective",
+      "spanish": "todos; as",
+      "english": "every; all",
+      "is_cognate": false
+    },
+    {
+      "id": 37,
+      "word_type": "adjective",
+      "spanish": "tonto; a",
+      "english": "foolish",
+      "is_cognate": false
+    },
+    {
+      "id": 38,
+      "word_type": "verb",
+      "spanish": "comer",
+      "english": "to eat",
+      "is_cognate": false
+    },
+    {
+      "id": 39,
+      "word_type": "verb",
+      "spanish": "descansar",
+      "english": "to rest",
+      "is_cognate": false
+    },
+    {
+      "id": 40,
+      "word_type": "verb",
+      "spanish": "desea",
+      "english": "(she) wishes; wants",
+      "is_cognate": false
+    },
+    {
+      "id": 41,
+      "word_type": "verb",
+      "spanish": "hago",
+      "english": "I do",
+      "is_cognate": false
+    },
+    {
+      "id": 42,
+      "word_type": "verb",
+      "spanish": "ir",
+      "english": "to go",
+      "is_cognate": false
+    },
+    {
+      "id": 43,
+      "word_type": "verb",
+      "spanish": "ganamos",
+      "english": "we earn",
+      "is_cognate": false
+    },
+    {
+      "id": 44,
+      "word_type": "verb",
+      "spanish": "¡mira!",
+      "english": "look!",
+      "is_cognate": false
+    },
+    {
+      "id": 45,
+      "word_type": "verb",
+      "spanish": "mira",
+      "english": "(she) looks at; watches",
+      "is_cognate": false
+    },
+    {
+      "id": 46,
+      "word_type": "verb",
+      "spanish": "miran",
+      "english": "they look at; watch",
+      "is_cognate": false
+    },
+    {
+      "id": 47,
+      "word_type": "verb",
+      "spanish": "respirar",
+      "english": "to breathe",
+      "is_cognate": false
+    },
+    {
+      "id": 48,
+      "word_type": "verb",
+      "spanish": "son",
+      "english": "they are",
+      "is_cognate": false
+    },
+    {
+      "id": 49,
+      "word_type": "verb",
+      "spanish": "trabajar",
+      "english": "to work",
+      "is_cognate": false
+    },
+    {
+      "id": 50,
+      "word_type": "verb",
+      "spanish": "van",
+      "english": "they go; walk",
+      "is_cognate": false
+    },
+    {
+      "id": 51,
+      "word_type": "verb",
+      "spanish": "ver",
+      "english": "to see",
+      "is_cognate": false
+    },
+    {
+      "id": 52,
+      "word_type": "verb",
+      "spanish": "visita",
+      "english": "(she) visits",
+      "is_cognate": true
+    },
+    {
+      "id": 53,
+      "word_type": "verb",
+      "spanish": "visitan",
+      "english": "they visit",
+      "is_cognate": true
+    },
+    {
+      "id": 54,
+      "word_type": "verb",
+      "spanish": "vivir",
+      "english": "to live",
+      "is_cognate": false
+    },
+    {
+      "id": 55,
+      "word_type": "other words",
+      "spanish": "a",
+      "english": "to",
+      "is_cognate": false
+    },
+    {
+      "id": 56,
+      "word_type": "other words",
+      "spanish": "aquí",
+      "english": "here",
+      "is_cognate": false
+    },
+    {
+      "id": 57,
+      "word_type": "other words",
+      "spanish": "así",
+      "english": "so;(in) this way; thus",
+      "is_cognate": false
+    },
+    {
+      "id": 58,
+      "word_type": "other words",
+      "spanish": "cómo",
+      "english": "how",
+      "is_cognate": false
+    },
+    {
+      "id": 59,
+      "word_type": "other words",
+      "spanish": "después de",
+      "english": "after",
+      "is_cognate": false
+    },
+    {
+      "id": 60,
+      "word_type": "other words",
+      "spanish": "eso",
+      "english": "that",
+      "is_cognate": false
+    },
+    {
+      "id": 61,
+      "word_type": "other words",
+      "spanish": "las (fem. pl.)",
+      "english": "the",
+      "is_cognate": false
+    },
+    {
+      "id": 62,
+      "word_type": "other words",
+      "spanish": "los (masc. pl.)",
+      "english": "the",
+      "is_cognate": false
+    },
+    {
+      "id": 63,
+      "word_type": "other words",
+      "spanish": "o ",
+      "english": "or",
+      "is_cognate": false
+    },
+    {
+      "id": 64,
+      "word_type": "other words",
+      "spanish": "para",
+      "english": "for; in order to",
+      "is_cognate": false
+    },
+    {
+      "id": 65,
+      "word_type": "other words",
+      "spanish": "pero",
+      "english": "but",
+      "is_cognate": false
+    },
+    {
+      "id": 66,
+      "word_type": "other words",
+      "spanish": "por",
+      "english": "along; through",
+      "is_cognate": false
+    },
+    {
+      "id": 67,
+      "word_type": "other words",
+      "spanish": "¿por qué hay...?",
+      "english": "why is there...?",
+      "is_cognate": false
+    },
+    {
+      "id": 68,
+      "word_type": "other words",
+      "spanish": "pues",
+      "english": "well; then",
+      "is_cognate": false
+    },
+    {
+      "id": 69,
+      "word_type": "other words",
+      "spanish": "sus",
+      "english": "their",
+      "is_cognate": false
+    },
+    {
+      "id": 70,
+      "word_type": "other words",
+      "spanish": "todos",
+      "english": "everything; all",
+      "is_cognate": false
+    },
+    {
+      "id": 71,
+      "word_type": "other words",
+      "spanish": "trienta",
+      "english": "thirty",
+      "is_cognate": false
+    },
+    {
+      "id": 72,
+      "word_type": "other words",
+      "spanish": "una",
+      "english": "a",
+      "is_cognate": false
+    },
+    {
+      "id": 73,
+      "word_type": "other words",
+      "spanish": "viente",
+      "english": "twenty",
+      "is_cognate": false
+    }
+  ],
+  "Unit Three": [
+    {
+      "id": 1,
+      "word_type": "noun",
+      "spanish": "la abuela",
+      "english": "the grandmother",
+      "is_cognate": false
+    },
+    {
+      "id": 2,
+      "word_type": "noun",
+      "spanish": "el abuelo",
+      "english": "the grandfather",
+      "is_cognate": false
+    },
+    {
+      "id": 3,
+      "word_type": "noun",
+      "spanish": "la actividad",
+      "english": "the activity",
+      "is_cognate": true
+    },
+    {
+      "id": 4,
+      "word_type": "noun",
+      "spanish": "el amiguito",
+      "english": "the little friend",
+      "is_cognate": false
+    },
+    {
+      "id": 5,
+      "word_type": "noun",
+      "spanish": "el año",
+      "english": "the year",
+      "is_cognate": true
+    },
+    {
+      "id": 6,
+      "word_type": "noun",
+      "spanish": "el cuarto",
+      "english": "the room",
+      "is_cognate": false
+    },
+    {
+      "id": 7,
+      "word_type": "noun",
+      "spanish": "el cumpleaños",
+      "english": "the birthday",
+      "is_cognate": false
+    },
+    {
+      "id": 8,
+      "word_type": "noun",
+      "spanish": "el dia",
+      "english": "the day",
+      "is_cognate": true
+    },
+    {
+      "id": 9,
+      "word_type": "noun",
+      "spanish": "los dulces",
+      "english": "the candy",
+      "is_cognate": false
+    },
+    {
+      "id": 10,
+      "word_type": "noun",
+      "spanish": "la familia",
+      "english": "the family",
+      "is_cognate": true
+    },
+    {
+      "id": 11,
+      "word_type": "noun",
+      "spanish": "la forma",
+      "english": "the shape; form",
+      "is_cognate": true
+    },
+    {
+      "id": 12,
+      "word_type": "noun",
+      "spanish": "la hermana",
+      "english": "the sister",
+      "is_cognate": false
+    },
+    {
+      "id": 13,
+      "word_type": "noun",
+      "spanish": "el juego",
+      "english": "the game",
+      "is_cognate": false
+    },
+    {
+      "id": 14,
+      "word_type": "noun",
+      "spanish": "la música",
+      "english": "the music",
+      "is_cognate": true
+    },
+    {
+      "id": 15,
+      "word_type": "noun",
+      "spanish": "el nene",
+      "english": "the baby; a very young child",
+      "is_cognate": false
+    },
+    {
+      "id": 16,
+      "word_type": "noun",
+      "spanish": "el niño",
+      "english": "the child; the little boy",
+      "is_cognate": false
+    },
+    {
+      "id": 17,
+      "word_type": "noun",
+      "spanish": "los padres",
+      "english": "the parents",
+      "is_cognate": false
+    },
+    {
+      "id": 18,
+      "word_type": "noun",
+      "spanish": "el pájaro",
+      "english": "the bird",
+      "is_cognate": false
+    },
+    {
+      "id": 19,
+      "word_type": "noun",
+      "spanish": "el pedazo",
+      "english": "the piece",
+      "is_cognate": false
+    },
+    {
+      "id": 20,
+      "word_type": "noun",
+      "spanish": "la piñata",
+      "english": "the piñata",
+      "is_cognate": true
+    },
+    {
+      "id": 21,
+      "word_type": "noun",
+      "spanish": "los refrescos",
+      "english": "the refreshments",
+      "is_cognate": true
+    },
+    {
+      "id": 22,
+      "word_type": "noun",
+      "spanish": "el regalito",
+      "english": "the little present",
+      "is_cognate": false
+    },
+    {
+      "id": 23,
+      "word_type": "noun",
+      "spanish": "el regalo",
+      "english": "the present",
+      "is_cognate": false
+    },
+    {
+      "id": 24,
+      "word_type": "noun",
+      "spanish": "todo el mundo",
+      "english": "everyone",
+      "is_cognate": false
+    },
+    {
+      "id": 25,
+      "word_type": "noun",
+      "spanish": "todos",
+      "english": "everybody; all",
+      "is_cognate": false
+    },
+    {
+      "id": 26,
+      "word_type": "noun",
+      "spanish": "la torta de chocolate",
+      "english": "the chocolate cake",
+      "is_cognate": false
+    },
+    {
+      "id": 27,
+      "word_type": "noun",
+      "spanish": "el vecino",
+      "english": "the neighbor",
+      "is_cognate": false
+    },
+    {
+      "id": 28,
+      "word_type": "noun",
+      "spanish": "la vela",
+      "english": "the candle",
+      "is_cognate": false
+    },
+    {
+      "id": 29,
+      "word_type": "verb",
+      "spanish": "ayudar",
+      "english": "to help",
+      "is_cognate": false
+    },
+    {
+      "id": 30,
+      "word_type": "verb",
+      "spanish": "bailar",
+      "english": "to dance",
+      "is_cognate": false
+    },
+    {
+      "id": 31,
+      "word_type": "verb",
+      "spanish": "bajar",
+      "english": "to go down",
+      "is_cognate": false
+    },
+    {
+      "id": 32,
+      "word_type": "verb",
+      "spanish": "buscar",
+      "english": "to look for",
+      "is_cognate": false
+    },
+    {
+      "id": 33,
+      "word_type": "verb",
+      "spanish": "caminar",
+      "english": "to walk; to stroll",
+      "is_cognate": false
+    },
+    {
+      "id": 34,
+      "word_type": "verb",
+      "spanish": "cantar",
+      "english": "to sing",
+      "is_cognate": false
+    },
+    {
+      "id": 35,
+      "word_type": "verb",
+      "spanish": "comprar",
+      "english": "to buy",
+      "is_cognate": false
+    },
+    {
+      "id": 36,
+      "word_type": "verb",
+      "spanish": "cortar",
+      "english": "to cut",
+      "is_cognate": false
+    },
+    {
+      "id": 37,
+      "word_type": "verb",
+      "spanish": "desear",
+      "english": "to wish; to want",
+      "is_cognate": false
+    },
+    {
+      "id": 38,
+      "word_type": "verb",
+      "spanish": "entrar (en)",
+      "english": "to enter",
+      "is_cognate": true
+    },
+    {
+      "id": 39,
+      "word_type": "verb",
+      "spanish": "escuchar",
+      "english": "to listen",
+      "is_cognate": false
+    },
+    {
+      "id": 40,
+      "word_type": "verb",
+      "spanish": "está",
+      "english": "he (she) is [location; mood]",
+      "is_cognate": false
+    },
+    {
+      "id": 41,
+      "word_type": "verb",
+      "spanish": "explicar",
+      "english": "to explain",
+      "is_cognate": false
+    },
+    {
+      "id": 42,
+      "word_type": "verb",
+      "spanish": "gozar",
+      "english": "to enjoy",
+      "is_cognate": false
+    },
+    {
+      "id": 43,
+      "word_type": "verb",
+      "spanish": "gritar",
+      "english": "to shout",
+      "is_cognate": false
+    },
+    {
+      "id": 44,
+      "word_type": "verb",
+      "spanish": "invitar",
+      "english": "to invite",
+      "is_cognate": true
+    },
+    {
+      "id": 45,
+      "word_type": "verb",
+      "spanish": "llegar",
+      "english": "to arrive",
+      "is_cognate": false
+    },
+    {
+      "id": 46,
+      "word_type": "verb",
+      "spanish": "llevar",
+      "english": "to carry",
+      "is_cognate": false
+    },
+    {
+      "id": 47,
+      "word_type": "verb",
+      "spanish": "llorar",
+      "english": "to cry",
+      "is_cognate": false
+    },
+    {
+      "id": 48,
+      "word_type": "verb",
+      "spanish": "necesitar",
+      "english": "to need",
+      "is_cognate": true
+    },
+    {
+      "id": 49,
+      "word_type": "verb",
+      "spanish": "practicar",
+      "english": "to practice",
+      "is_cognate": true
+    },
+    {
+      "id": 50,
+      "word_type": "verb",
+      "spanish": "preguntar",
+      "english": "to ask",
+      "is_cognate": false
+    },
+    {
+      "id": 51,
+      "word_type": "verb",
+      "spanish": "preparar",
+      "english": "to prepare",
+      "is_cognate": true
+    },
+    {
+      "id": 52,
+      "word_type": "verb",
+      "spanish": "soplar",
+      "english": "to blow (out)",
+      "is_cognate": false
+    },
+    {
+      "id": 53,
+      "word_type": "verb",
+      "spanish": "sopla las velas",
+      "english": "he blows out the candles",
+      "is_cognate": false
+    },
+    {
+      "id": 54,
+      "word_type": "verb",
+      "spanish": "tomar",
+      "english": "to take",
+      "is_cognate": false
+    },
+    {
+      "id": 55,
+      "word_type": "verb",
+      "spanish": "va (a)",
+      "english": "he (she) is going",
+      "is_cognate": false
+    },
+    {
+      "id": 56,
+      "word_type": "verb",
+      "spanish": "¡vamos! (a)",
+      "english": "let's",
+      "is_cognate": false
+    },
+    {
+      "id": 57,
+      "word_type": "adjectives",
+      "spanish": "contento; a",
+      "english": "happy",
+      "is_cognate": true
+    },
+    {
+      "id": 58,
+      "word_type": "adjectives",
+      "spanish": "delicioso; a",
+      "english": "delicious",
+      "is_cognate": true
+    },
+    {
+      "id": 59,
+      "word_type": "adjectives",
+      "spanish": "ese",
+      "english": "that (masc.)",
+      "is_cognate": false
+    },
+    {
+      "id": 60,
+      "word_type": "adjectives",
+      "spanish": "este ",
+      "english": "this (masc.)",
+      "is_cognate": false
+    },
+    {
+      "id": 61,
+      "word_type": "adjectives",
+      "spanish": "feliz",
+      "english": "happy",
+      "is_cognate": false
+    },
+    {
+      "id": 62,
+      "word_type": "adjectives",
+      "spanish": "lleno; a (de)",
+      "english": "filled (with)",
+      "is_cognate": false
+    },
+    {
+      "id": 63,
+      "word_type": "adjectives",
+      "spanish": "magnífico; a",
+      "english": "magnificent",
+      "is_cognate": true
+    },
+    {
+      "id": 64,
+      "word_type": "adjectives",
+      "spanish": "ocupado; a",
+      "english": "busy",
+      "is_cognate": true
+    },
+    {
+      "id": 65,
+      "word_type": "adjectives",
+      "spanish": "pobre",
+      "english": "poor",
+      "is_cognate": false
+    },
+    {
+      "id": 66,
+      "word_type": "adjectives",
+      "spanish": "su",
+      "english": "his; her; your (formal)",
+      "is_cognate": false
+    },
+    {
+      "id": 67,
+      "word_type": "adjectives",
+      "spanish": "típico; a",
+      "english": "typical",
+      "is_cognate": true
+    },
+    {
+      "id": 68,
+      "word_type": "adjectives",
+      "spanish": "triste",
+      "english": "sad",
+      "is_cognate": false
+    },
+    {
+      "id": 69,
+      "word_type": "adjectives",
+      "spanish": "tu",
+      "english": "your (familiar)",
+      "is_cognate": false
+    },
+    {
+      "id": 70,
+      "word_type": "other words",
+      "spanish": "cuando",
+      "english": "when",
+      "is_cognate": false
+    },
+    {
+      "id": 71,
+      "word_type": "other words",
+      "spanish": "cuatro",
+      "english": "four",
+      "is_cognate": false
+    },
+    {
+      "id": 72,
+      "word_type": "other words",
+      "spanish": "¿donde?",
+      "english": "where",
+      "is_cognate": false
+    },
+    {
+      "id": 73,
+      "word_type": "other words",
+      "spanish": "él",
+      "english": "he",
+      "is_cognate": false
+    },
+    {
+      "id": 74,
+      "word_type": "other words",
+      "spanish": "ella",
+      "english": "she",
+      "is_cognate": false
+    },
+    {
+      "id": 75,
+      "word_type": "other words",
+      "spanish": "ellos",
+      "english": "they",
+      "is_cognate": false
+    },
+    {
+      "id": 76,
+      "word_type": "other words",
+      "spanish": "entonces",
+      "english": "then",
+      "is_cognate": false
+    },
+    {
+      "id": 77,
+      "word_type": "other words",
+      "spanish": "hoy",
+      "english": "today",
+      "is_cognate": false
+    },
+    {
+      "id": 78,
+      "word_type": "other words",
+      "spanish": "hoy cumple cuatro años ",
+      "english": "today he is four years old",
+      "is_cognate": false
+    },
+    {
+      "id": 79,
+      "word_type": "other words",
+      "spanish": "más",
+      "english": "more; most",
+      "is_cognate": false
+    },
+    {
+      "id": 80,
+      "word_type": "other words",
+      "spanish": "que",
+      "english": "who",
+      "is_cognate": false
+    },
+    {
+      "id": 81,
+      "word_type": "other words",
+      "spanish": "¿que? ",
+      "english": "what?",
+      "is_cognate": false
+    },
+    {
+      "id": 82,
+      "word_type": "other words",
+      "spanish": "solo; a",
+      "english": "alone",
+      "is_cognate": false
+    },
+    {
+      "id": 83,
+      "word_type": "other words",
+      "spanish": "tú",
+      "english": "your (familiar)",
+      "is_cognate": false
+    },
+    {
+      "id": 84,
+      "word_type": "other words",
+      "spanish": "un (masc.)",
+      "english": "a",
+      "is_cognate": false
+    },
+    {
+      "id": 85,
+      "word_type": "other words",
+      "spanish": "una (fem.)",
+      "english": "a",
+      "is_cognate": false
+    },
+    {
+      "id": 86,
+      "word_type": "other words",
+      "spanish": "usted",
+      "english": "you (formal)",
+      "is_cognate": false
+    }
+  ]
+}

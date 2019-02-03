@@ -29,13 +29,12 @@ export default class Lesson {
         tempCards = cardsData.map(obj => {
             return new Card(
             obj.word_type,
-            obj.spanish_singular, //removed spanish plural temporarily
+            obj.spanish, 
             obj.english
             );
         });
         this.cards = this.shuffleCards(tempCards);
         // this.cards = this.cards.slice(0, 5); //temporarily reduce list for testing
-        console.log(this.cards);
     }
     shuffleCards(cardsArray) {
         return cardsArray.sort(function() {

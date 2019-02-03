@@ -1,47 +1,171 @@
+@mixin easing(){
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.btn:hover {
+    @include easing();
+}
+$brown: #523925;
+$desktop-up: 768px;
+$mobile-down: 767px;
+
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 5px;
+    background-color: #ffb500;
+    color: $brown;
+    background: url('../img/7989501950_80097b7924_k_edit.jpg');
+    background-size:cover;
 }
-.panel {
-    max-width: 900px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+h1 {
+    font-family: 'Rye';
+    text-align: center;
+    // font-family: 'Chela One';
+    font-size: 60px;
+    letter-spacing: .03em;
+    color: #a05731;
+     @media (max-width: 600px){
+         font-size: 26px;
+         margin-top: 5px;
+     }
 }
-.panel-heading {
-    .lesson-selector {
-        display: flex;
-        flex-direction: column;
-        min-height: 100px;
-        align-items: center;
-        justify-content: center;
+.btn:focus{
+    outline: none !important;
+}
+.btn:active{
+    box-shadow: none;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 41px;
+    padding: 10px 19px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #ffd559;
+    background-color: #fba434;
+    color: #984506;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjNDQ0JyBkPSdNNy40MDYgNy44MjhsNC41OTQgNC41OTQgNC41OTQtNC41OTQgMS40MDYgMS40MDYtNiA2LTYtNnonPjwvcGF0aD48L3N2Zz4=");
+    background-position: 99% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    &:focus, &:active {
+        outline: none;
+        box-shadow:none;
+        border-color:none;
     }
 }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container.padding {
+    @media (min-width: $desktop-up){
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-label {
-    margin-right: 15px;
-    display: inline-block;
+.row.header {
+    @media (min-width: 800px){
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+        justify-content: bottom;
+        align-items: center;
+    }
 }
-.panel-body h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 40px;
+.radio-buttons, .lesson-selector {
+    margin-bottom: 10px;
+}
+.radio-buttons{
+    @media (min-width: $desktop-up){
+        // margin-bottom: 10px;
+    }
+    label {
+        padding:11px 18px;
+    }
+    input[type="radio"]{
+        position: absolute;
+        clip: rect(0,0,0,0);
+        pointer-events: none;
+    }
+    .btn{
+        background-color: #fba434;
+        color: #984506;
+        // background-color: #7c0e6c;        
+    }
+    .btn.active{
+        background-color: #ec602a;
+        color: white;
+        box-shadow: none;
+        // background-color: #ff0099;
+        position: initial;
+
+        &:hover{
+            background-color: #ec602a;
+        position: initial;
+
+        }
+    }
+    .btn:hover{
+        background-color:lighten(#f39113, 5%);
+    }
+}
+h2#phrase, #answer {
+    // font-family: 'Merriweather', serif;
+   @media (min-width: $desktop-up){
+        font-size: 50px;
+   } 
+   font-size: 25px;
     text-align: center;
-}
-.panel-body p {
-    font-size: 20px;
-    color: #555;
 }
 .buttons > div {
-    text-align: center;
+    text-align: right;
 }
-.next{
-    text-align: center;
+.buttons .btn {
+    @media (min-width: $desktop-up){
+        padding: 20px 40px;
+        min-height: 60px;
+        min-width: 200px;
+    }
+    min-width: 100px;
+    margin-right: 0;
 }
-.panel-body .col-sm-6 {
-    padding: 30px;
-}
-button {
-    margin: 5px;
+
+.card-container{
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 0px #b38318;  
+    &>p{
+        color:#d089c5;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        background-color: #7c0e6c;
+        padding: 10px 15px;
+        margin-bottom: 0;
+        @media (max-width: $mobile-down){
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+       
+    }
 }
 .card {
     display: flex;
@@ -49,15 +173,54 @@ button {
     align-items: center;
     justify-content: center;
     min-height: 300px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
     position: relative;
+    background-color: white;
+    padding-bottom: 20px;
+    @media (max-width: $mobile-down){
+        min-height: 125px;
+    }
 }
 #wordtype{
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 15px;
+    left: 15px;
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: .05em;
+    @media (max-width: $mobile-down){
+        display: none;
+    }
+}
+button {
+    margin: 15px;
+}
+.btn {
+    border-radius: 0;
+    border: 0;
+}
+.btn.back {
+    background-color:  #4aa6af;
+    color: white;
+    background-color: #ffd559;
+    color: #984506;
+
+}
+.btn-primary.active {
+}
+.btn.next{
+    @include easing;
+    background-color: #4aa6af;
+}
+.btn.reveal{
+    @include easing;
+    background-color: #99cc33;
+}
+.title {
+    background:url('../img/espanol.png') center center no-repeat;
+    height: 400px;
+    background-size: contain;
+    opacity: .5;
+    h1{
+        display:none;
+    }
 }
