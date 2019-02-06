@@ -5,17 +5,20 @@ export default class Lesson {
         this.cards;
         this.currentCard = 0;
         this.answerLanguage = "English"
-        this.languageSelected = "Spanish";
+        this.ClueLanguage = "Spanish";
         this.isRevealed = false;
         this.createDeck(data);
     }
-    getLanguageSelected(){
-        return this.languageSelected;
+    getClueLanguage(){
+        return this.ClueLanguage;
     }
-    setLanguageSelected(lang){
+    getAnswerLanguage(){
+        return this.answerLanguage;
+    }
+    setClueLanguage(lang){
         //flip the values
-        let temp = this.languageSelected;
-        this.languageSelected = lang;
+        let temp = this.ClueLanguage;
+        this.ClueLanguage = lang;
         this.answerLanguage = temp;
     }
     getAnswerLanguage(){
@@ -53,5 +56,8 @@ export default class Lesson {
     }  
     getCurrentCard(){
         return this.cards[this.currentCard];
+    }
+    getCurrentCardNumber(){
+        return this.currentCard;
     }
 }

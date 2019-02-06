@@ -4,15 +4,17 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
   padding: 5px;
+  padding-top: 15px;
   background-color: #ffb500;
-  color: #523925;
+  color: #332b25;
   background: url("../img/7989501950_80097b7924_k_edit.jpg");
   background-size: cover; }
 
+.row.header {
+  text-align: center; }
+
 h1 {
-  font-family: 'Rye';
   text-align: center;
   font-size: 60px;
   letter-spacing: .03em;
@@ -109,6 +111,7 @@ h1 {
   background-color: #f49c2b; }
 
 h2#phrase, #answer {
+  margin: 0 10px;
   font-size: 25px;
   text-align: center; }
   @media (min-width: 768px) {
@@ -132,11 +135,11 @@ h2#phrase, #answer {
   box-shadow: 0px 0px 10px 0px #b38318; }
   .card-container > p {
     color: #d089c5;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    background-color: #7c0e6c;
+    background-color: #92206c;
     padding: 10px 15px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center; }
     @media (max-width: 767px) {
       .card-container > p {
         padding-top: 5px;
@@ -179,6 +182,11 @@ button {
   background-color: #ffd559;
   color: #984506; }
 
+.status {
+  padding-top: 10px;
+  text-align: right;
+  color: #332b25; }
+
 .btn.next {
   transition-property: all;
   transition-duration: 0.3s;
@@ -190,9 +198,6 @@ button {
   background-color: #99cc33; }
 
 .title {
-  background: url("../img/espanol.png") center center no-repeat;
-  height: 400px;
-  background-size: contain;
-  opacity: .5; }
+  padding-top: 10px; }
   .title h1 {
     display: none; }

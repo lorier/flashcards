@@ -3,17 +3,19 @@ import Lesson from "./lesson.js";
 export default class UI {
     constructor(data){
         this.data = data;
-        // console.log(this.data);
         this.nextBtn;
         this.testText;
         this.lessonOne = this.data['Unit One'];
         this.lesson = new Lesson(this.lessonOne);
-        console.log(this.lessonOne);
         this.revealed = false;
+        this.nextBtnCallback;
+        this.nextBtnState = 'on';
+        this.boundCallback = e => this.changeCardContent(e);
         
         this.getDomElements();
         this.attachHandlers();
-        this.initializeUI();
+        this.resetUI();
+        this.setUpCardLanguage();
         this.populateLessonsSelector();
     }
     getDomElements(){
@@ -26,6 +28,9 @@ export default class UI {
         this.answerText = document.querySelector("#answer");
         this.radios = document.querySelectorAll('input[name="langopt"]');
         this.lessonSelector = document.querySelector('#lessons');
+        this.cardNumber = document.querySelector('#card-number');
+        this.totalCards = document.querySelector('#total-cards');
+        this.storeCard = document.querySelector('#save-to-local');
     }
     populateLessonsSelector(){
         Object.entries(this.data).forEach(([key]) => {
@@ -36,93 +41,128 @@ export default class UI {
         })
     }
     attachHandlers(){
-        this.nextBtn.addEventListener('click', (e) => { 
-            this.revealNext(e);
-        });
+        this.nextBtn.addEventListener('click', this.boundCallback );
+       
         this.backBtn.addEventListener('click', (e) => {
             this.previousCard();
+            this.setBackButton();
         })
         this.lessonSelector.addEventListener('change', (e)=>{
             this.selectLesson(e);
+            this.resetUI();
+            this.resetRadioButtons();
+            this.setUpCardLanguage();
         })
+        this.storeCard.addEventListener('click', (e) =>{
+            let key = 'card' + this.lesson.getCurrentCardNumber()
+            localStorage.setItem(key, JSON.stringify( this.lesson.getCurrentCard() ));
+        })
+        //set up radio buttons with event listeners and text based on language settings in the lesson class
         for (let i = 0; i < this.radios.length; i++) {  
           this.radios[i].addEventListener("click", e => {
-            const cls = ['active', 'remove'];
-            this.radios.forEach(obj =>{ obj.parentElement.classList.remove(...cls)})
-            e.target.parentElement.classList.add(...cls);
-            this.lesson.setLanguageSelected(e.target.value);
+            this.radios.forEach(obj =>{ obj.parentElement.classList.remove('active')})
+            e.target.parentElement.classList.add('active');
+            this.lesson.setClueLanguage(e.target.value);
             e.target.classList.add(e.target.value);
-            this.updateUI();
+            this.setUpCardLanguage();
           }, true);
         }
     }
     selectLesson(e){
-        console.log(e.target.value);
         let selected = this.data[e.target.value];
-        console.log(selected);
         this.lesson = new Lesson(selected);
-        this.initializeUI();
-
     }
-    revealNext(e){
-        if(this.isRevealed){
+    changeCardContent(e){
+        let isRevealed,
+            text;    
+        if( this.isRevealed && this.lesson.currentCard < this.lesson.cards.length ){
+            // Get next card
             this.answerText.innerText = "";
             this.lesson.getNextCard();
             this.wordType.innerText = this.lesson.getCurrentCard().getWordType();
-            this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getLanguageSelected());
-            this.nextBtn.innerText = "Reveal"
-            console.log(e.target.classList);
-            e.target.classList.add('reveal');
-            e.target.classList.remove('next');
-            this.isRevealed = false;
-
+            this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getClueLanguage());
+            isRevealed = false;
+            text = "Reveal"
+            this.setBackButton();
+            this.cardNumber.innerText = this.lesson.getCurrentCardNumber() + 1;
         }else{
-            this.answerText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.answerLanguage);
-            this.isRevealed = true;
-            e.target.classList.remove('reveal');
-            e.target.classList.add('next');
-            this.nextBtn.innerText = "Next"
+            //are we at the end of the deck? if so, then wrap up
+            if( this.lesson.currentCard >= this.lesson.cards.length-1 ){
+                isRevealed = true;
+                text = "Done!"
+                this.answerText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getAnswerLanguage());
+                this.nextBtn.removeEventListener('click', this.boundCallback );
+                this.nextBtnState = 'off';
+                this.setNextButton(isRevealed, text);
+                return;
+            }
+            //if not at the end, reveal the answer
+            this.answerText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getAnswerLanguage());
+            isRevealed = true;
+            text = "Next";
         }
+        this.setNextButton(isRevealed, text);
     }
     previousCard(){
         this.lesson.getPreviousCard();
         this.wordType.innerText = this.lesson.getCurrentCard().getWordType();
-        this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getLanguageSelected());
-        this.answerText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.answerLanguage);
-        this.isRevealed = true;
-        this.nextBtn.innerText = "Next"
+        this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getClueLanguage());
+        this.answerText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getAnswerLanguage());
+        this.setNextButton(true, "Next");
     }
-    initializeUI(){
+    resetUI(){
+        if(this.nextBtnState = 'off'){
+            this.nextBtn.addEventListener('click', this.boundCallback );
+        }
         this.answerText.innerText = "";
-        this.answer = "";
-        this.wordType.innerText = this.lesson.getCurrentCard().getWordType();
-        this.testTitleText.innerText = this.lesson.getLanguageSelected();
-        this.testTitleText.classList.add(this.lesson.getLanguageSelected());
-        this.ansTitleText.classList.add(this.lesson.answerLanguage);
-        this.ansTitleText.innerText = this.lesson.answerLanguage;
-        
-        this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getLanguageSelected());
-        this.nextBtn.innerText = "Reveal";
-        // console.log(this.lesson);
+
+        this.totalCards.innerText = this.lesson.cards.length;
+        this.cardNumber.innerText = this.lesson.getCurrentCardNumber() + 1;
         //manage language selector
-        for (var i = 0; i < this.radios.length; i++)
-            if (this.radios[i].value === this.lesson.getLanguageSelected() ) {
-                this.radios[i].checked;
-            }
+        this.setNextButton(false, "Reveal");
     }
-    updateUI(){
-        this.wordType.innerText = this.lesson.getCurrentCard().getWordType();
-        
-        this.testTitleText.className = '';
-        this.testTitleText.classList.add(this.lesson.getLanguageSelected());
-        this.testTitleText.innerText = this.lesson.getLanguageSelected();
-        
-        this.ansTitleText.innerText = this.lesson.answerLanguage;
-        this.ansTitleText.className = '';
-        this.ansTitleText.classList.add(this.lesson.answerLanguage);
-        this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getLanguageSelected());
+    resetRadioButtons(){
+        for (var i = 0; i < this.radios.length; i++){
+            this.radios[i].parentElement.classList.remove('active');
+            let x = this.radios[i].value
+            if (x === this.lesson.getClueLanguage() ) {
+                this.radios[i].checked;
+                this.radios[i].parentElement.classList.add('active');
+            }
+        }
+    }
+    setUpCardLanguage(){
+
+        //clear answer text, if there is any
         this.answerText.innerText = "";
-        this.isRevealed = false;
-        this.nextBtn.innerText = "Reveal";
+ 
+        //update title bars
+        this.testTitleText.innerText = this.lesson.getClueLanguage();
+        this.ansTitleText.innerText = this.lesson.getAnswerLanguage();
+        
+        //get the first clue phrase
+        this.testText.innerText = this.lesson.getCurrentCard().getPhrase(this.lesson.getClueLanguage());//////
+    }
+    setBackButton(){
+        if(this.lesson.currentCard === 0 ){
+            this.backBtn.classList.add('disabled');
+        }else{
+            this.backBtn.classList.remove('disabled');
+        }
+        if(this.nextBtnState == 'off'){
+            this.nextBtn.addEventListener('click', this.boundCallback );
+            this.nextBtnState == 'on'
+        }
+    }
+    setNextButton(isRevealed, buttonText = "Reveal", ){
+        this.isRevealed = isRevealed;
+        this.nextBtn.innerText = buttonText;
+        if(isRevealed) {           
+            this.nextBtn.classList.remove('reveal');
+            this.nextBtn.classList.add('next');
+        }else{
+            this.nextBtn.classList.remove('next');
+            this.nextBtn.classList.add('reveal');
+        }
     }
 }

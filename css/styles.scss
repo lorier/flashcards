@@ -5,23 +5,27 @@
 .btn:hover {
     @include easing();
 }
-$brown: #523925;
+$brown: #332b25;
+$purple: #92206c;
 $desktop-up: 768px;
 $mobile-down: 767px;
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
     padding: 5px;
+    padding-top: 15px;
     background-color: #ffb500;
     color: $brown;
     background: url('../img/7989501950_80097b7924_k_edit.jpg');
+    // background: url('../img/bg2.jpg');
     background-size:cover;
 }
-h1 {
-    font-family: 'Rye';
+.row.header {
     text-align: center;
-    // font-family: 'Chela One';
+}
+h1 {
+    // font-family: 'Rye';
+    text-align: center;
     font-size: 60px;
     letter-spacing: .03em;
     color: #a05731;
@@ -131,6 +135,7 @@ h1 {
 }
 h2#phrase, #answer {
     // font-family: 'Merriweather', serif;
+    margin: 0 10px;
    @media (min-width: $desktop-up){
         font-size: 50px;
    } 
@@ -155,11 +160,11 @@ h2#phrase, #answer {
     box-shadow: 0px 0px 10px 0px #b38318;  
     &>p{
         color:#d089c5;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        background-color: #7c0e6c;
+        background-color: $purple;
         padding: 10px 15px;
         margin-bottom: 0;
+        font-size: 20px;
+        text-align: center;
         @media (max-width: $mobile-down){
             padding-top: 5px;
             padding-bottom: 5px;
@@ -205,7 +210,10 @@ button {
     color: #984506;
 
 }
-.btn-primary.active {
+.status{
+    padding-top: 10px;
+    text-align: right;
+    color: $brown;
 }
 .btn.next{
     @include easing;
@@ -216,10 +224,11 @@ button {
     background-color: #99cc33;
 }
 .title {
-    background:url('../img/espanol.png') center center no-repeat;
-    height: 400px;
-    background-size: contain;
-    opacity: .5;
+    padding-top: 10px;
+    // background:url('../img/espanol_title.svg') center center no-repeat;
+    // height: 400px;
+    // background-size: contain;
+    // opacity: .5;
     h1{
         display:none;
     }
