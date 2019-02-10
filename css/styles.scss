@@ -7,6 +7,10 @@
 }
 $brown: #332b25;
 $purple: #92206c;
+$green: #99cc33;
+$orange: #fba434;
+$yellow: #ffd559;
+$blue: #4aa6af;
 $desktop-up: 768px;
 $mobile-down: 767px;
 
@@ -14,7 +18,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     padding: 5px;
     padding-top: 15px;
-    background-color: #ffb500;
+    // background-color: #ffb500;
     color: $brown;
     background: url('../img/7989501950_80097b7924_k_edit.jpg');
     // background: url('../img/bg2.jpg');
@@ -47,8 +51,8 @@ h1 {
     padding: 10px 19px;
     font-size: 14px;
     line-height: 1.42857143;
-    background-color: #ffd559;
-    background-color: #fba434;
+    background-color: $yellow;
+    background-color:$orange;
     color: #984506;
     background-image: none;
     border: none;
@@ -215,13 +219,38 @@ button {
     text-align: right;
     color: $brown;
 }
+.pagination {
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
+    right: 10px;
+}
+.storage-buttons{
+    text-align: right;
+}
+.stored-card-container{
+    padding: 10px;
+    // width: 100%;
+    text-align: center;
+    background-color: $yellow;
+    float: left;
+}
+#clear-storage{
+    float: left;
+}
+#retest {
+    float: right;
+}
+#view-storage{
+    background-color: transparent;
+}
 .btn.next{
     @include easing;
-    background-color: #4aa6af;
+    background-color: $blue;
 }
 .btn.reveal{
     @include easing;
-    background-color: #99cc33;
+    background-color: $green;
 }
 .title {
     padding-top: 10px;

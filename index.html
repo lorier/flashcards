@@ -50,20 +50,40 @@
                     <p id="answer-lang-title">English</p>
                     <div class="card">
                         <h2 id="answer"></h2>
+                        <p class="pagination"><span id="card-number"></span>/<span id="total-cards"></span></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 status">
-                <p id="save-to-local">Save this word to retest bucket</p>
-                <p><span id="card-number"></span>/<span id="total-cards"></span></p>
             </div>
         </div>
     </div>
     <div class="container padding">
-        <div class="row buttons">
-            <div class="col-sm-12">
-                <button id="back" class="btn btn-lg back disabled">Back</button>
-                <button id="next" class="btn btn-lg btn-success"></button>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="stored-card-container">
+                            <h3>My Retest Bucket</h3>
+                            <p id="cards-stored">0</p>
+                            <button id="clear-storage">Clear Storage</button>
+                            <button id="retest" class="btn btn-primary disabled">Retest Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-12 storage-buttons">
+                        <button id="view-storage">View local storage</button>
+                        <button id="save-to-local" class="btn btn-default">Save word to retest bucket?</button>
+                    </div>
+                </div>
+                <div class="row buttons">
+                    <div class="col-sm-12">
+                        <button id="back" class="btn btn-lg back disabled">Back</button>
+                        <button id="next" class="btn btn-lg btn-success"></button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

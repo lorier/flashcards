@@ -1,36 +1,45 @@
 import Lesson from "./lesson.js";
+import StoredCards from "./storedcards.js";
 
 export default class UI {
     constructor(data){
         this.data = data;
-        this.nextBtn;
-        this.testText;
         this.lessonOne = this.data['Unit One'];
         this.lesson = new Lesson(this.lessonOne);
+        this.storage = new StoredCards();
         this.revealed = false;
-        this.nextBtnCallback;
         this.nextBtnState = 'on';
         this.boundCallback = e => this.changeCardContent(e);
         
         this.getDomElements();
         this.attachHandlers();
         this.resetUI();
+        this.updateStorageUI()
         this.setUpCardLanguage();
         this.populateLessonsSelector();
     }
     getDomElements(){
-        this.nextBtn = document.querySelector("#next");
-        this.testText = document.querySelector("#phrase");
-        this.backBtn = document.querySelector("#back");
+        //card and associated text fields
         this.wordType = document.querySelector("#wordtype");
         this.testTitleText = document.querySelector("#test-lang-title");
         this.ansTitleText = document.querySelector("#answer-lang-title");
         this.answerText = document.querySelector("#answer");
-        this.radios = document.querySelectorAll('input[name="langopt"]');
-        this.lessonSelector = document.querySelector('#lessons');
+        this.nextBtn = document.querySelector("#next");
         this.cardNumber = document.querySelector('#card-number');
         this.totalCards = document.querySelector('#total-cards');
+        
+        //UI components (buttons, select)
+        this.testText = document.querySelector("#phrase");
+        this.backBtn = document.querySelector("#back");
+        this.radios = document.querySelectorAll('input[name="langopt"]');
+        this.lessonSelector = document.querySelector('#lessons');
+        
+        //card storage UI
+        this.cardsStored = document.querySelector('#cards-stored');
         this.storeCard = document.querySelector('#save-to-local');
+        this.retest = document.querySelector('#retest');
+        this.clearStorage = document.querySelector('#clear-storage');
+        this.viewStorage = document.querySelector('#view-storage');
     }
     populateLessonsSelector(){
         Object.entries(this.data).forEach(([key]) => {
@@ -55,8 +64,27 @@ export default class UI {
         })
         this.storeCard.addEventListener('click', (e) =>{
             let key = 'card' + this.lesson.getCurrentCardNumber()
-            localStorage.setItem(key, JSON.stringify( this.lesson.getCurrentCard() ));
+            this.storage.saveCard( key, this.lesson.getCurrentCard() );
+            this.updateStorageUI();
         })
+        this.retest.addEventListener('click', (e) => {
+            if(this.storage.getSavedCards().length === 0){ return; }
+            let stg = this.storage.getSavedCards();
+            console.log(stg);
+            this.lesson = new Lesson(stg);
+            this.retest.classList.add("disabled");
+            this.resetUI();
+            this.setUpCardLanguage();  
+        })
+        this.clearStorage.addEventListener('click', (e) => {
+            this.storage.clearCards();
+            this.updateStorageUI();
+            console.log(window.localStorage);
+        })
+        this.viewStorage.addEventListener('click', (e) => {
+            console.log(this.storage.getSavedCards());
+        })
+
         //set up radio buttons with event listeners and text based on language settings in the lesson class
         for (let i = 0; i < this.radios.length; i++) {  
           this.radios[i].addEventListener("click", e => {
@@ -66,6 +94,17 @@ export default class UI {
             e.target.classList.add(e.target.value);
             this.setUpCardLanguage();
           }, true);
+        }
+    }
+   
+    updateStorageUI(){
+        let l = this.storage.getSavedCards().length;
+        if( l === 0 ){  
+            this.cardsStored.innerText = 0;
+            this.retest.classList.add("disabled");
+        }else{
+            this.cardsStored.innerText = l;
+            this.retest.classList.remove("disabled");
         }
     }
     selectLesson(e){
@@ -115,7 +154,7 @@ export default class UI {
             this.nextBtn.addEventListener('click', this.boundCallback );
         }
         this.answerText.innerText = "";
-
+        this.cardsStored.innerText = this.storage.getSavedCards().length;
         this.totalCards.innerText = this.lesson.cards.length;
         this.cardNumber.innerText = this.lesson.getCurrentCardNumber() + 1;
         //manage language selector

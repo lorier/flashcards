@@ -5,20 +5,22 @@ export default class Lesson {
         this.cards;
         this.currentCard = 0;
         this.answerLanguage = "English"
-        this.ClueLanguage = "Spanish";
+        this.clueLanguage = "Spanish";
         this.isRevealed = false;
+                console.log(data);
+
         this.createDeck(data);
     }
     getClueLanguage(){
-        return this.ClueLanguage;
+        return this.clueLanguage;
     }
     getAnswerLanguage(){
         return this.answerLanguage;
     }
     setClueLanguage(lang){
         //flip the values
-        let temp = this.ClueLanguage;
-        this.ClueLanguage = lang;
+        let temp = this.clueLanguage;
+        this.clueLanguage = lang;
         this.answerLanguage = temp;
     }
     getAnswerLanguage(){
