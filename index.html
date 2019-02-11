@@ -42,6 +42,7 @@
                     <div class="card">
                         <h2 id="phrase"></h2>
                         <p id="wordtype"></p>
+                        <div id="checkbox-container" class="form-check"><label for="store-card"><input id="store-card" type="checkbox" name="store-card" class="form-check-input" checked><span class="checkmark"></span>Save to retest bucket</label></div>
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
                     <p id="answer-lang-title">English</p>
                     <div class="card">
                         <h2 id="answer"></h2>
-                        <p class="pagination"><span id="card-number"></span>/<span id="total-cards"></span></p>
+                            <p class="pagination"><span id="card-number"></span>/<span id="total-cards"></span></p>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@
                         <div class="stored-card-container">
                             <h3>My Retest Bucket</h3>
                             <p id="cards-stored">0</p>
-                            <button id="clear-storage">Clear Storage</button>
+                            <button id="clear-storage" class="btn btn-primary disabled">Clear Storage</button>
                             <button id="retest" class="btn btn-primary disabled">Retest Now</button>
                         </div>
                     </div>
@@ -74,7 +75,6 @@
                 <div class="row">
                     <div class="col-sm-12 storage-buttons">
                         <button id="view-storage">View local storage</button>
-                        <button id="save-to-local" class="btn btn-default">Save word to retest bucket?</button>
                     </div>
                 </div>
                 <div class="row buttons">
@@ -86,6 +86,15 @@
 
             </div>
         </div>
+    </div>
+    <div id="modal" class="hide-modal transparent">
+        <div class="message">
+           <h3>Done with your retest! How did you do?</h3> 
+            <button id="modal-retest" class="btn btn-success btn-lg">Do it again!</button>
+            <button id="modal-dismiss" class="btn btn-info btn-lg">Back to Main Lesson</button>
+
+        </div>
+        <div class="overlay"></div>
     </div>
     <script type="module" src="js/dest/app.js"></script>
 </body>

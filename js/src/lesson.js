@@ -2,14 +2,19 @@ import Card from "./card.js";
 
 export default class Lesson {
     constructor(data) {
-        this.cards;
+        this.cards = [];
         this.currentCard = 0;
         this.answerLanguage = "English"
         this.clueLanguage = "Spanish";
         this.isRevealed = false;
-                console.log(data);
-
+        this.isRetest = false;
         this.createDeck(data);
+    }
+    getIsRetest(){
+        return this.isRetest;
+    }
+    setIsRetest(bool){
+        this.isRetest = bool;
     }
     getClueLanguage(){
         return this.clueLanguage;
@@ -33,9 +38,10 @@ export default class Lesson {
         let tempCards = [];
         tempCards = cardsData.map(obj => {
             return new Card(
-            obj.word_type,
-            obj.spanish, 
-            obj.english
+                obj.id,
+                obj.word_type,
+                obj.spanish, 
+                obj.english
             );
         });
         this.cards = this.shuffleCards(tempCards);
@@ -58,6 +64,11 @@ export default class Lesson {
     }  
     getCurrentCard(){
         return this.cards[this.currentCard];
+    }
+    setCurrentCardNumber(num){
+        if(num >= 0 && num < this.cards.length){
+            this.currentCard = num;
+        }
     }
     getCurrentCardNumber(){
         return this.currentCard;

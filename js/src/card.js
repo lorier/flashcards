@@ -1,5 +1,6 @@
  export default class Card {
-      constructor(word_type, spanish, english) {
+      constructor(id, word_type, spanish, english) {
+        this.id = id;
         this.spanish = spanish;
         this.english = english;
         this.word_type = word_type;

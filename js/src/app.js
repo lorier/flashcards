@@ -11,8 +11,6 @@ class App{
         let myData = new DataService();
         myData.getData() //returns a promise
          .then( data => {
-            // console.log(JSON.stringify(data));
-            // console.log(newLesson);
             this.ui = new UI(data);
         })
         .catch(error => console.error(error));
